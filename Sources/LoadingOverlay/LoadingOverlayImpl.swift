@@ -6,13 +6,7 @@ private let showDuration: TimeInterval = .milliseconds(200)
 private let hideDuration: TimeInterval = .milliseconds(200)
 private let loadingViewInitialTransform = CGAffineTransform(scale: 0.9)
 
-final class LoadingOverlayImpl:
-    View,
-    LoadingOverlay
-{
-
-    // MARK: - UI
-
+final class LoadingOverlayImpl: View, LoadingOverlay {
     private var loadingView: UIView?
 
     override func configureViews() {
